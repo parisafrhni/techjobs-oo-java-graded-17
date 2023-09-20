@@ -22,11 +22,11 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringStartsAndEndsWithNewLineExists () throws ClassNotFoundException {
-        Class jobTestClass = getClassByName("JobTest");
+        Class JobTest = getClassByName("JobTest");
         Method testToStringStartsAndEndsWithNewLineMethod = null;
 
         try {
-            testToStringStartsAndEndsWithNewLineMethod = jobTestClass.getMethod("testToStringStartsAndEndsWithNewLine");
+            testToStringStartsAndEndsWithNewLineMethod = JobTest.getMethod("testToStringStartsAndEndsWithNewLine");
         } catch (NoSuchMethodException e) {
             fail("JobTest does not have a testToStringStartsAndEndsWithNewLine method");
         }
@@ -63,11 +63,11 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testTestToStringHandlesEmptyFieldExists () throws ClassNotFoundException {
-        Class jobTestClass = getClassByName("JobTest");
+        Class JobTest = getClassByName("JobTest");
         Method testToStringHandlesEmptyField = null;
 
         try {
-            testToStringHandlesEmptyField = jobTestClass.getMethod("testToStringHandlesEmptyField");
+            testToStringHandlesEmptyField = JobTest.getMethod("testToStringHandlesEmptyField");
         } catch (NoSuchMethodException e) {
             fail("JobTest does not have a testToStringHandlesEmptyField method");
         }
